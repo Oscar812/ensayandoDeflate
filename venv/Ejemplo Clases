@@ -1,0 +1,28 @@
+class Relacion_KRL:
+  Nombre  =''
+  Tipo    =''
+  Origen  =''
+  Destino =''
+  def SetNom (self):
+    print (self.Nombre)
+  def SetDest (self):
+    print (self.Destino)
+
+class Nodo_KRL:
+  Id      =''
+  Nombre  = ''
+  Rel_KRL = Relacion_KRL()
+  def SetNom (self):
+    print (self.Nombre)
+
+
+A = Nodo_KRL()
+A.Nombre='Matrimonio'
+A.Id='1'
+A.Rel_KRL.Nombre='Tiene'
+A.Rel_KRL.Origen='Matrimonio'
+A.Rel_KRL.Destino='Esposa'
+
+A.SetNom()
+A.Rel_KRL.SetNom()
+A.Rel_KRL.SetDest()
